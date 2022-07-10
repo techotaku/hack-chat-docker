@@ -12,4 +12,6 @@ RUN wget -O hack-chat.zip https://github.com/hack-chat/main/archive/refs/heads/m
     rm -rf documentation && \
     rm -rf client
 
+WORKDIR /app/hack-chat
+
 CMD ["pm2-runtime", "pm2.config.js"]
